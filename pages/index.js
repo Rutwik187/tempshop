@@ -44,6 +44,7 @@ const Home = ({ miniBannerData, featureProductsData, bannerData, categories, pro
     </div>
 
     {/* Brand Data */}
+
     <div className='w-full  px-5 md:px-10 mx-auto'>
       <div className="text-center max-w-[800px] mx-auto mb-[10px] mt-[30px] md:mb-[30px] md:mt-[60px]">
         <h2 className='text-[28px] md:text-[34px]  font-semibold leading-tight'>Brands We Work With</h2>
@@ -53,7 +54,7 @@ const Home = ({ miniBannerData, featureProductsData, bannerData, categories, pro
       <Brands brands={brandData} />
     </div>
     <Footer info={infoData} />
-    <a target='_blank' href={`https://wa.me/${infoData[0].phoneNo}?`}>
+    <a target='_blank' href={`https://wa.me/${infoData[0]?.phoneNo}?`}>
 
       <IconContext.Provider value={{ color: "green" }}>
 
